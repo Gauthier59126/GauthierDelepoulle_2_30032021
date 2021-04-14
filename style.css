@@ -1,0 +1,689 @@
+@font-face {
+    font-family: releway_bold;
+    src: url(fonts/Releway/static/Raleway-ExtraBold.ttf);
+}
+
+
+@font-face {
+    font-family: releway_regular;
+    src: url(fonts/Releway/static/Raleway-Regular.ttf);
+}
+
+a{
+    
+    text-decoration: none;
+}
+
+a:link{
+    color: black;
+}
+
+a:visited{
+    color: black;
+}
+
+a:hover{
+    color: #0065FC;
+    border-bottom: #0065FC;
+}
+
+input{
+    width: 210px;
+    height: 20px;
+    border: none;
+    font-size: 14px;
+    font-family: 'releway_regular';
+}
+
+input:focus{
+    outline: none;
+}
+
+h1{
+    font-family: 'releway_bold';
+    font-size: 24px;
+}
+
+h2{
+    font-family: 'releway_bold';
+    font-size: 18px;
+}
+
+h3{
+    font-family: 'releway_bold';
+    font-size: 16px;
+}
+
+h4{
+    font-family: 'releway_regular';
+    font-size: 16px;
+}
+
+p{
+    font-family: 'releway_regular';
+    font-size: 16px;
+ 
+}
+
+body{
+    padding-left: 12%;
+    padding-right: 12%;
+}
+
+.signup{
+    color: #0065FC;
+    font-family: 'releway_bold';
+}
+
+.conteneur1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo_reservia{
+    width: 65%;
+}
+.navigation{
+    display: flex;
+    justify-content: space-around;
+    width: 35%;
+}
+
+.titre1-2{
+    line-height: 15px;
+    padding-bottom: 1%;
+}
+
+.recherche{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    border: 2px #e2e2e2 solid;
+    border-radius: 15px;
+   
+}
+
+
+.icone_position{
+    width: 12%;
+    background-color: #F2F2F2;
+    border-radius: 15px 0px 0px 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.clavier{
+    width: 58%;
+    padding-left: 5%;
+}
+
+.bouton{
+    width: 30%;
+    background-color:#0065FC; 
+    border-radius: 0px 10px 10px 0px;
+}
+
+.bouton_rechercher{
+    color: white;
+    text-align: center;
+}
+
+
+
+.filtres{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin-top : 2%;
+    border-radius: 10px;
+    padding-bottom: 1%;
+}
+
+.economique{
+    width: 18%;
+    display: flex;
+    border: 2px #e2e2e2 solid;
+    border-radius: 50px;
+}
+
+.famillial{
+    width: 15%;
+    display: flex;
+    align-items: center;
+    border: 2px #e2e2e2 solid;
+    border-radius: 50px;
+}
+
+.romantique{
+    width: 17%;
+    display: flex;
+    align-items: center;
+    border: 2px #e2e2e2 solid;
+    border-radius: 50px;
+}
+
+.animaux{
+    width: 24%;
+    display: flex;
+    align-items: center;
+    border: 2px #e2e2e2 solid;
+    border-radius: 50px;
+}
+
+.icone_economique{
+    width: 27%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #DEEBFF;
+    align-items: center;
+    border-radius: 50px 50px 50px 50px;
+}
+
+.icone_famillial{
+    width: 34%;
+    height: 100%;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    background-color: #DEEBFF;
+    align-items: center;
+    border-radius: 50px 50px 50px 50px;
+}
+
+.icone_romantique{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #DEEBFF;
+    align-items: center;
+    border-radius: 50px 50px 50px 50px;
+}
+
+.icone_animaux{
+    width: 23%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #DEEBFF;
+    align-items: center;
+    border-radius: 50px 50px 50px 50px;
+}
+
+.nom_filtre{
+    width: 73%;
+    display: flex;
+    justify-content: center;
+}
+
+.nom_filtre1{
+    width: 73%;
+    display: flex;
+    justify-content: center;
+}
+
+.texte500{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.conteneur3 {
+    width: 63%;
+    background-color: #F2F2F2;
+    padding: 1%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.conteneur3_1{
+    display: flex;
+    justify-content: space-around;
+
+}
+.conteneur3_2{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+
+.conteneur4 {
+    width: 30%;
+    background-color: #F2F2F2;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.section_hebergements_trending{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.hotel1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    width: 30%;
+    height: 205px;
+    padding: 5px;
+    border-radius: 20px;
+    box-shadow:  2px 2px 20px #b6b6b6;
+}
+
+/*.hotel2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: white;
+    width: 30%;
+    height: 205px;
+    padding: 5px;
+    border-radius: 20px; 
+}*/
+
+.hotel2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    width: 30%;
+    height: 205px;
+    padding: 5px;
+    border-radius: 20px;
+    box-shadow:  2px 2px 20px #b6b6b6;
+}
+
+.hotel3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    width: 30%;
+    height: 205px;
+    padding: 5px;
+    border-radius: 20px;
+    box-shadow:  2px 2px 20px #b6b6b6;
+}
+
+.hotel4{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    width: 30%;
+    height: 205px;
+    padding: 5px;
+    border-radius: 20px;
+    box-shadow:  2px 2px 20px #b6b6b6;
+}
+
+.hotel5{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    width: 30%;
+    height: 205px;
+    padding: 5px;
+    border-radius: 20px;
+    box-shadow:  2px 2px 20px #b6b6b6;
+}
+
+.hotel6{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: white;
+    width: 30%;
+    height: 205px;
+    padding: 5px;
+    border-radius: 20px;
+    box-shadow:  2px 2px 20px#b6b6b6;
+}
+
+
+.hotel7{
+    display: flex;
+    background-color: white;
+    height: 140px;
+    width: 90%;
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow:  2px 2px 20px #b6b6b6;
+}
+
+.hotel8{
+    display: flex;
+    background-color: white;
+    height: 140px;
+    width: 90%;
+    border-radius: 20px;
+    padding: 5px;
+    margin-top: 7%;
+    margin-bottom: 7%;
+    box-shadow:  2px 2px 20px #b6b6b6;
+}
+
+.hotel9{
+    display: flex;
+    background-color: white;
+    height: 140px;
+    width: 90%;
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow:  2px 2px 20px #b6b6b6;
+}
+
+.conteneur5{
+    display: flex;
+    justify-content: space-between;
+    height: 450px;
+}
+
+#section_activites{
+    margin-top: 50px;
+    height: 100%;
+}
+
+footer{
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.imghotel{
+    width: 100%;
+    height: 60%;
+    border-radius: 15px 15px 0px 0px;
+    background-image: url(images/hebergements/4_small/cannebiere.jpg);
+    background-size: cover;
+}
+
+.imghotel2{
+    width: 100%;
+    height: 60%;
+    border-radius: 15px 15px 0px 0px;
+    background-image: url(images/hebergements/4_small/port.jpg);
+    background-size: cover;
+}
+
+.imghotel3{
+    width: 100%;
+    height: 60%;
+    border-radius: 15px 15px 0px 0px;
+    background-image: url(images/hebergements/4_small/mouettes.jpg);
+    background-size: cover;
+}
+
+.imghotel4{
+    width: 100%;
+    height: 60%;
+    border-radius: 15px 15px 0px 0px;
+    background-image: url(images/hebergements/4_small/hotel\ de\ la\ mer.jpg);
+    background-size: cover;
+}
+
+.imghotel5{
+    width: 100%;
+    height: 60%;
+    border-radius: 15px 15px 0px 0px;
+    background-image: url(images/hebergements/4_small/panier.jpg);
+    background-size: cover;
+}
+
+.imghotel6{
+    width: 100%;
+    height: 60%;
+    border-radius: 15px 15px 0px 0px;
+    background-image: url(images/hebergements/4_small/chez\ amina.jpg);
+    background-size: cover;
+}
+
+.titre3{
+    margin-left: 2%;
+    padding-bottom: 1%;
+}
+
+.titre4{
+    margin-left: 2%;
+    padding-bottom: 1%;
+}
+
+.lespluspopu{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.plus{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+.imghotel7{
+    width: 35%;
+    height: 100%;
+    border-radius: 15px 0px 0px 15px;
+    background-image: url(images/hebergements/4_small/soleil\ du\ matin.jpg);
+    background-size: cover;
+}
+
+.imghotel8{
+    width: 35%;
+    height: 100%;
+    border-radius: 15px 0px 0px 15px;
+    background-image: url(images/hebergements/4_small/au\ coeur\ de\ leau.jpg);
+    background-size: cover;
+}
+
+.imghotel9{
+    width: 35%;
+    height: 100%;
+    border-radius: 15px 0px 0px 15px;
+    background-image: url(images/hebergements/4_small/tout\ bleu\ et\ blanc.jpg);
+    background-size: cover;
+}
+
+#description{
+    padding-left: 3%;
+}
+
+.nomhotel{
+    margin: 0px
+}
+
+.txt{
+    margin: 0px;
+    font-size: 15px;
+}
+
+.descriptionimghotel{
+    line-height: 1;
+    width: 80%;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content:  space-around;
+    margin-left: 4%;
+    margin-bottom: 1%;
+}
+
+
+.fa-star {
+    color: #e2e2e2;
+    cursor: pointer;
+    padding: 0.0625rem;
+}
+
+.fa-star.bleu{
+    color: #0065FC;
+}
+.stars{
+    display: inline-flex;
+	font-size: 15px;
+}
+
+
+    
+.activite1{
+    width: 22%;
+    height: 100%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow:  2px 2px 20px #e2e2e2;
+}
+
+.activite2_3{
+    display: flex;
+    flex-direction: column;
+    width: 22%;
+    height: 100%;
+}
+
+.activite2{
+    box-shadow:  2px 2px 20px #e2e2e2;
+    border-radius: 20px;
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.activite3{
+    box-shadow:  2px 2px 20px #e2e2e2;
+    border-radius: 20px;
+    width: 100%;
+    height: 40%;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.activite4{
+    box-shadow:  2px 2px 20px #e2e2e2;
+    width: 22%;
+    height: 100%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.activite5_6{
+    display: flex;
+    flex-direction: column;
+    width: 22%;
+    height: 100%;
+}
+
+.activite5{
+    box-shadow:  2px 2px 20px #e2e2e2;
+    border-radius: 20px;
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.activite6{
+    box-shadow:  2px 2px 20px #e2e2e2;
+    border-radius: 20px;
+    width: 100%;
+    height: 40%;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.imgactivite1{
+    width: 100%;
+    height: 90%;
+    border-radius: 15px 15px 0px 0px;
+    background-image: url(images/activites/4_small/vieux\ port.jpg);
+    background-size: cover;
+}
+
+.imgactivite2{
+    width: 100%;
+    height: 85%;
+    border-radius: 15px 15px 0px 0px;
+    background-image: url(images/activites/4_small/fort\ de\ paumegues.jpg);
+    background-size: cover;
+}
+
+.imgactivite3{
+    width: 100%;
+    height: 85%;
+    border-radius: 15px 15px 0px 0px;
+    background-image: url(images/activites/4_small/frioul.jpg);
+    background-size: cover;
+}
+
+.imgactivite4{
+    width: 100%;
+    height: 90%;
+    border-radius: 15px 15px 0px 0px;
+    background-image: url(images/activites/4_small/par\ national.jpg);
+    background-size: cover;
+}
+.imgactivite5{
+    width: 100%;
+    height: 85%;
+    border-radius: 15px 15px 0px 0px;
+    background-image: url(images/activites/4_small/notre\ dame.jpg);
+    background-size: cover;
+}
+
+.imgactivite6{
+    width: 100%;
+    height: 85%;
+    border-radius: 15px 15px 0px 0px;
+    background-image: url(images/activites/4_small/parc\ longchamp.jpg);
+    background-size: cover;
+}
+
+
+.titreimgactivite{
+    height: 12%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 4%;
+}
+
+
+.fa-map-marker-alt{
+    vertical-align: middle;
+    
+}
+
+
+@media sreen and (max-width:1024px){
+    p{
+        color: red;
+        background-color: black;
+        font-size: 1.2em;
+    }
+
+
+    
+
+}
