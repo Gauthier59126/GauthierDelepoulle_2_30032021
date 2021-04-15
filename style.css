@@ -10,21 +10,56 @@
 }
 
 a{
-    
-    text-decoration: none;
-}
+    text-decoration:none;
+    cursor: pointer;
+}   
 
-a:link{
+.nav_hebergements{
+    font-family: 'releway_regular';
+    font-size: 16px;
     color: black;
 }
 
-a:visited{
+.nav_activites{
+    font-family: 'releway_regular';
+    font-size: 16px;
     color: black;
 }
 
-a:hover{
+.nav_signup {
+    font-family: 'releway_bold';
+    font-size: 16px;
     color: #0065FC;
-    border-bottom: #0065FC;
+}
+
+.nav_hebergements a:visited{
+    color: black;
+}
+
+.nav_activites a:visited{
+    color: black;
+}
+
+.nav_signup a:visited{
+    color: #0065FC;
+}
+
+.nav_hebergements a:hover{
+    color: #0065FC;
+    border-top: solid 2px #0065FC;
+    padding-top: 20px;
+}
+
+.nav_activites a:hover{
+    color: #0065FC;
+    border-top: solid 2px #0065FC;
+    padding-top: 20px;
+}
+
+.nav_signup a:hover{
+    color: #0065FC;
+    border-top: solid 2px #0065FC;
+    padding-top: 20px;
 }
 
 input{
@@ -54,10 +89,10 @@ h3{
     font-size: 16px;
 }
 
-h4{
+/*h4{
     font-family: 'releway_regular';
     font-size: 16px;
-}
+}*/
 
 p{
     font-family: 'releway_regular';
@@ -70,10 +105,6 @@ body{
     padding-right: 12%;
 }
 
-.signup{
-    color: #0065FC;
-    font-family: 'releway_bold';
-}
 
 .conteneur1{
     display: flex;
@@ -123,6 +154,8 @@ body{
     width: 30%;
     background-color:#0065FC; 
     border-radius: 0px 10px 10px 0px;
+    cursor: pointer;
+    z-index: 1;
 }
 
 .bouton_rechercher{
@@ -130,7 +163,14 @@ body{
     text-align: center;
 }
 
-
+.lien_span{
+    position: absolute;
+    width: 120px;
+    height: 55px;
+    z-index: 2;
+    top: 173px;
+    left: auto;
+}
 
 .filtres{
     width: 70%;
@@ -146,6 +186,7 @@ body{
     display: flex;
     border: 2px #e2e2e2 solid;
     border-radius: 50px;
+    cursor: pointer;
 }
 
 .famillial{
@@ -154,6 +195,7 @@ body{
     align-items: center;
     border: 2px #e2e2e2 solid;
     border-radius: 50px;
+    cursor: pointer;
 }
 
 .romantique{
@@ -162,6 +204,7 @@ body{
     align-items: center;
     border: 2px #e2e2e2 solid;
     border-radius: 50px;
+    cursor: pointer;
 }
 
 .animaux{
@@ -170,6 +213,7 @@ body{
     align-items: center;
     border: 2px #e2e2e2 solid;
     border-radius: 50px;
+    cursor: pointer;
 }
 
 .icone_economique{
@@ -211,6 +255,26 @@ body{
     background-color: #DEEBFF;
     align-items: center;
     border-radius: 50px 50px 50px 50px;
+}
+
+.economique:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.famillial:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.romantique:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.animaux:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
 }
 
 .nom_filtre{
@@ -279,6 +343,7 @@ body{
     padding: 5px;
     border-radius: 20px;
     box-shadow:  2px 2px 20px #b6b6b6;
+    cursor: pointer;
 }
 
 /*.hotel2{
@@ -302,6 +367,7 @@ body{
     padding: 5px;
     border-radius: 20px;
     box-shadow:  2px 2px 20px #b6b6b6;
+    cursor: pointer;
 }
 
 .hotel3{
@@ -314,6 +380,7 @@ body{
     padding: 5px;
     border-radius: 20px;
     box-shadow:  2px 2px 20px #b6b6b6;
+    cursor: pointer;
 }
 
 .hotel4{
@@ -326,6 +393,7 @@ body{
     padding: 5px;
     border-radius: 20px;
     box-shadow:  2px 2px 20px #b6b6b6;
+    cursor: pointer;
 }
 
 .hotel5{
@@ -338,6 +406,7 @@ body{
     padding: 5px;
     border-radius: 20px;
     box-shadow:  2px 2px 20px #b6b6b6;
+    cursor: pointer;
 }
 
 .hotel6{
@@ -350,6 +419,7 @@ body{
     padding: 5px;
     border-radius: 20px;
     box-shadow:  2px 2px 20px#b6b6b6;
+    cursor: pointer;
 }
 
 
@@ -361,6 +431,7 @@ body{
     border-radius: 20px;
     padding: 5px;
     box-shadow:  2px 2px 20px #b6b6b6;
+    cursor: pointer;
 }
 
 .hotel8{
@@ -373,6 +444,7 @@ body{
     margin-top: 7%;
     margin-bottom: 7%;
     box-shadow:  2px 2px 20px #b6b6b6;
+    cursor: pointer;
 }
 
 .hotel9{
@@ -383,6 +455,7 @@ body{
     border-radius: 20px;
     padding: 5px;
     box-shadow:  2px 2px 20px #b6b6b6;
+    cursor: pointer;
 }
 
 .conteneur5{
@@ -539,8 +612,6 @@ footer{
     display: inline-flex;
 	font-size: 15px;
 }
-
-
     
 .activite1{
     width: 22%;
@@ -549,6 +620,7 @@ footer{
     display: flex;
     flex-direction: column;
     box-shadow:  2px 2px 20px #e2e2e2;
+    cursor: pointer;
 }
 
 .activite2_3{
@@ -565,6 +637,7 @@ footer{
     height: 60%;
     display: flex;
     flex-direction: column;
+    cursor: pointer;
 }
 
 .activite3{
@@ -575,6 +648,7 @@ footer{
     margin-top: 10%;
     display: flex;
     flex-direction: column;
+    cursor: pointer;
 }
 
 .activite4{
@@ -584,6 +658,7 @@ footer{
     border-radius: 20px;
     display: flex;
     flex-direction: column;
+    cursor: pointer;
     
 }
 
@@ -601,6 +676,7 @@ footer{
     height: 60%;
     display: flex;
     flex-direction: column;
+    cursor: pointer;
 }
 
 .activite6{
@@ -611,6 +687,7 @@ footer{
     margin-top: 10%;
     display: flex;
     flex-direction: column;
+    cursor: pointer;
 }
 
 .imgactivite1{
@@ -682,8 +759,12 @@ footer{
         background-color: black;
         font-size: 1.2em;
     }
+}
 
+.titre_footer{
+    cursor: pointer;
+}
 
-    
-
+.txt_footer{
+    cursor: pointer;
 }
