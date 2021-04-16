@@ -6,9 +6,11 @@
         <meta charset="utf-8"/>
         <title> Reservia </title>
         <link href="reservia.css" rel="stylesheet" type="text/css">
+        
     </head>
-<body>
 
+<body>
+<div id="block_page">
     <!-- Header -->
     <header>
         <div class="conteneur1">
@@ -77,9 +79,9 @@
     <!-- Section 2 hébergements -->
     <section class="section_hebergements_trending">
         <div class="conteneur3">
-            <h1 id="ancre1" class="titre3"> Hébergements à Marseille</h1>
+            <div class="titre3"><h1 id="ancre1" > Hébergements à Marseille</h1></div>
             <div class="conteneur3_1">
-                <div class="hotel1">
+                <div id="hotel" class="hotel1">
                     <div class="imghotel"></div>
                     <div class="descriptionimghotel">
                         <h3  class="nomhotel">Auberge de la Cannebière</h3>
@@ -94,7 +96,7 @@
                     </div>
                 </div>
                 <div class="hotel2">
-                    <div class="imghotel2"></div>
+                    <div id="hotel" class="imghotel2"></div>
                     <div class="descriptionimghotel">
                         <h3 class="nomhotel">Hôtel du port</h3>
                         <p class="txt"> Nuit à partir de 52€</p>
@@ -108,7 +110,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="hotel3">
+                <div id="hotel" class="hotel3">
                     <div class="imghotel3"></div>
                     <div class="descriptionimghotel">
                         <h3 class="nomhotel">Hôtel Les mouettes</h3>
@@ -125,7 +127,7 @@
                 </div>
             </div>
             <div class="conteneur3_2">
-                <div class="hotel4">
+                <div id="hotel" class="hotel4">
                     <div class="imghotel4"></div>
                     <div class="descriptionimghotel">
                         <h3 class="nomhotel">Hôtel de la mer</h3>
@@ -140,7 +142,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="hotel5">
+                <div id="hotel" class="hotel5">
                     <div class="imghotel5"></div>
                     <div class="descriptionimghotel">
                         <h3 class="nomhotel">Auberge Le panier</h3>
@@ -155,7 +157,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="hotel6">
+                <div id="hotel" class="hotel6">
                    <!-- <img id="imghotel" src="images/hebergements/4_small/chez amina.jpg" height="80px" width="150px">-->
                     <div class="imghotel6"></div>
                     <div class="descriptionimghotel">
@@ -175,7 +177,11 @@
             <div class="plus"><h2 > Afficher plus </h2></div>
         </div>
         <div class="conteneur4">
-            <div class="lespluspopu"><h1>Les plus populaires</h1></div>
+            <div class="titre4">
+                <div><h1>Les plus populaires</h1></div>
+                <div class="icone_trend"><i class="fas fa-chart-line"></i></div>
+            </div>
+            
             <div class="hotel7">
                 <div class="imghotel7"></div>
                 <div id="description">
@@ -223,7 +229,7 @@
 
     <!-- Section 3 activités-->
     <section id="section_activites">
-        <h1 id="ancre2" class="titre4"> Activités à Marseille</h1>
+        <h1 id="ancre2" class="titre5"> Activités à Marseille</h1>
         <div class="conteneur5">
             <div class="activite1">
                 <div class="imgactivite1"></div>
@@ -256,21 +262,22 @@
             
         </div>
     </section>
+</div>
 
     <!-- footer -->
     <footer>
-        <div >
+        <div class="section_footer1">
             <h3 class="titre_footer">  A propos</h3></a>
             <p class="txt_footer"> Fonctionnement du site</p>
             <p class="txt_footer"> Conditions générales de vente</p>
             <p class="txt_footer"> Données et confidentialité</p>
         </div>
-        <div>
+        <div class="section_footer2">
             <h3 class="titre_footer"> Nos hébergements</h3>
             <p class="txt_footer"> Charte qualité</p>
             <p class="txt_footer"> Soumettre votre hôtel</p>
         </div>
-        <div>
+        <div class="section_footer2">
             <h3 class="titre_footer"> Assistance</h3>
             <p class="txt_footer"> Centre d'aide</p>
             <p class="txt_footer"> Nous contacter</p>
