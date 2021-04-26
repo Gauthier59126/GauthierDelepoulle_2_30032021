@@ -9,6 +9,11 @@
     src: url(fonts/Releway/static/Raleway-Regular.ttf);
 }
 
+body{
+    width: 1450px;
+    margin: auto;
+}
+
 #block_page{
     width: 1450px;
     margin: auto;
@@ -104,9 +109,28 @@ p{
     font-size: 16px;
 }
 
-.conteneur1{
+.conteneur1_pc{
     display: flex;
     justify-content: space-between;
+}
+
+#conteneur1_mobile{
+    display: flex;
+    flex-direction: column;
+}
+
+.part1{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+}
+
+.part2{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: solid 3px #F2F2F2;
 }
 
 .logo_reservia{
@@ -123,7 +147,7 @@ p{
     padding-bottom: 1%;
 }
 
-.recherche{
+.div_recherche{
     width: 30%;
     height: 100%;
     display: flex;
@@ -624,7 +648,6 @@ footer{
 }
 .stars{
     display: inline-flex;
-	font-size: 15px;
 }
     
 .activite1{
