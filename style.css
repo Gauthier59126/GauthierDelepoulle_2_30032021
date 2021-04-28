@@ -84,6 +84,7 @@ input:focus{
     outline: none;
 }
 
+
 h1{
     font-family: 'releway_bold';
     font-size: 24px;
@@ -136,15 +137,21 @@ p{
 .logo_reservia{
     width: 65%;
 }
+
 .navigation{
     display: flex;
     justify-content: space-around;
     width: 35%;
 }
 
-.titre1-2{
+.titre1_2{
+    height: 60px;
     line-height: 15px;
-    padding-bottom: 1%;
+    padding-bottom: 10px;
+}
+
+.titre1_pc{
+    line-height: 10px;
 }
 
 .div_recherche{
@@ -280,22 +287,30 @@ p{
 }
 
 .economique:hover{
-    transform: scale(1.1);
+    background-color: #DEEBFF;
+    transition: 0.5s;
+    transform: scale(1.02);
     transition: 0.3s;
 }
 
 .famillial:hover{
-    transform: scale(1.1);
+    background-color: #DEEBFF;
+    transition: 0.5s;
+    transform: scale(1.02);
     transition: 0.3s;
 }
 
 .romantique:hover{
-    transform: scale(1.1);
+    background-color: #DEEBFF;
+    transition: 0.5s;
+    transform: scale(1.02);
     transition: 0.3s;
 }
 
 .animaux:hover{
-    transform: scale(1.1);
+    background-color: #DEEBFF;
+    transition: 0.5s;
+    transform: scale(1.02);
     transition: 0.3s;
 }
 

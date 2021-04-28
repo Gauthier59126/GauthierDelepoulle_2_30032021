@@ -7,6 +7,7 @@
         <title> Reservia </title>
         <link href="reservia.css" rel="stylesheet" type="text/css">
         <link href="reservia_responsive.css" rel="stylesheet" type="text/css">
+        <link href="reservia_responsive_tab.css" rel="stylesheet" type="text/css">
     </head>
 
 <body id="body_pc">
@@ -16,7 +17,7 @@
         <header>
             <div class="conteneur1_pc">
                 <div class="logo_reserevia">
-                <div> <img src="images/logo/Reservia@3x.png" height="60px" width="130px"></div> 
+                <div> <img src="images/logo/Reservia@3x.png" height="60px" width="140px"></div> 
                 </div>
                 <div class="navigation">
                     <div class="nav_hebergements"><h4><a href="#ancre1" title="Hébergements disponibles à Marseille">Hébergements</a> </h4> </div>
@@ -26,7 +27,7 @@
             </div>
             <div id="conteneur1_mobile">
                 <div class="part1">
-                    <div class="logo_reservia"> <img src="images/logo/Reservia@3x.png" height="100px" width="220px"></div> 
+                    <div class="logo_reservia"> <img src="images/logo/Reservia@3x.png"  height="50px" width="110px"></div> 
                     <div class="nav_signup"><a href="https://openclassrooms.com/fr/">S'inscrire</a> </h4> </div>
                 </div>
                 <div class="part2">
@@ -36,20 +37,20 @@
             </div>
         </header>
 
-        <!-- Section 1 recherche -->
+        <!-- Section recherche et filtres-->
         <section id="section_recherche_filtres">
         <div class="conteneur2">
-            <div class="titre1-2">
-                <h1> Trouvez votre hébergement pour des vacances de rêve </h1>
+            <div class="titre1_2">
+                <h1 class="titre1_pc"> Trouvez votre hébergement pour des vacances de rêve </h1>
                 <p> En plein centre ville ou en pleine nature</p>
             </div>
             <div class="titre1_2_mobile">
-                <h1 class="titre1"> Trouvez votre hébergement pour des vacances de rêve </h1>
+                <h1 class="titre1_mobile"> Trouvez votre hébergement pour des vacances de rêve </h1>
                 <p class="titre2"> En plein centre ville ou en pleine nature</p>
             </div>
             <!--case de recherche ???-->
             <div class="div_recherche">
-                <div class="icone_position"> <i class="fas fa-map-marker-alt fa-2x"></i></div>
+                <div class="icone_position"> <i class="fas fa-map-marker-alt"></i></div>
                 <div class="clavier"> <!--<h2> Marseille, France</h2>-->
                     <form method="post" action="traitement.php">
                         <p>
@@ -57,7 +58,29 @@
                         </p>
                     </form>
                 </div>
-                <div class="bouton"> <i class="fas fa-search fa-2x"></i><a href=""> <!--<span class="lien_span"></span>--></a></div> 
+                <div class="bouton"> <h2 class="bouton_rechercher"> Rechercher</h2><a href=""> <!--<span class="lien_span"></span>--></a></div> 
+            </div>
+            <div class="div_recherche_mobile">
+                <div class="icone_position"> <i class="fas fa-map-marker-alt"></i></div>
+                <div class="clavier"> <!--<h2> Marseille, France</h2>-->
+                    <form method="post" action="traitement.php">
+                        <p>
+                            <input type="text" name="Rechercher" id="rechercher" placeholder="Rechercher">
+                        </p>
+                    </form>
+                </div>
+                <div class="bouton"> <i class="fas fa-search"></i><a href=""> <!--<span class="lien_span"></span>--></a></div> 
+            </div>
+            <div class="div_recherche_tab">
+                <div class="icone_position"> <i class="fas fa-map-marker-alt"></i></div>
+                <div class="clavier"> <!--<h2> Marseille, France</h2>-->
+                    <form method="post" action="traitement.php">
+                        <p>
+                            <input type="text" name="Rechercher" id="rechercher" placeholder="Rechercher">
+                        </p>
+                    </form>
+                </div>
+                <div class="bouton"> <i class="fas fa-search fa-lg"></i><a href=""> <span class="lien_span"></span></a></div> 
             </div>
             <div class="filtres">
                 <div><h2> Filtres </h2></div>
@@ -92,21 +115,46 @@
                     </div>
                     <div class="famillial">
                         <!--Icone+famillial-->
-                        <div class="icone_famillial"> <i class="fas fa-male fa-2x"" style="color: #0065FC;"></i></div>
+                        <div class="icone_famillial"> <i class="fas fa-male fa-2x" style="color: #0065FC;"></i></div>
                         <div class="nom_filtre"><h2>Famillial</h2></div>
                     </div>
                 </div>
                 <div class="romantique">
                     <!--Icone+romantique--> 
-                    <div class="icone_romantique"> <i class="fas fa-heart fa-2x"" style="color: #0065FC;"></i></div>
+                    <div class="icone_romantique"> <i class="fas fa-heart fa-2x" style="color: #0065FC;"></i></div>
                     <div class="nom_filtre"><h2> Romantique</h2></div>
                 </div>
                 <div class="animaux">
                     <!--Icone+animauxautorisés--> 
-                    <div class="icone_animaux"> <i class="fas fa-dog fa-2x"" style="color: #0065FC;"></i></div>
+                    <div class="icone_animaux"> <i class="fas fa-dog fa-2x" style="color: #0065FC;"></i></div>
                     <div class="nom_filtre1"><h2> Animaux autorisés</h2></div>
                 </div>
             </div>
+            <div class="filtres_tab">
+                <div class="eco_famillial_rom">
+                   <div><h2> Filtres </h2></div>
+                   <div class="economique">
+                       <!--Icone+economique--> 
+                       <div class="icone_economique"> <i class="fas fa-money-check-alt" style="color: #0065FC;"></i></div>
+                       <div class="nom_filtre" > <h2> Economique</h2></div>
+                   </div>
+                   <div class="famillial">
+                       <!--Icone+famillial-->
+                       <div class="icone_famillial"> <i class="fas fa-male" style="color: #0065FC;"></i></div>
+                       <div class="nom_filtre"><h2>Famillial</h2></div>
+                   </div>
+                   <div class="romantique">
+                       <!--Icone+romantique--> 
+                       <div class="icone_romantique"> <i class="fas fa-heart" style="color: #0065FC;"></i></div>
+                       <div class="nom_filtre"><h2> Romantique</h2></div>
+                   </div>
+               </div>
+               <div class="animaux">
+                   <!--Icone+animauxautorisés--> 
+                   <div class="icone_animaux"> <i class="fas fa-dog" style="color: #0065FC;"></i></div>
+                   <div class="nom_filtre1"><h2> Animaux autorisés</h2></div>
+               </div>
+           </div>
             <div class="texte500">
                <!--Icone info + plus de 500 logements sont dispo dans cette ville-->
                <div class="icone_info"><i class="fas fa-info-circle" style="color: #0065FC;"></i></div>
@@ -120,7 +168,7 @@
             <div id="section_trendings_mobile">
                 <div class="titre4">
                     <div><h1>Les plus populaires</h1></div>
-                    <div class="icone_trend"><i class="fas fa-chart-line fa-3x" width="200px" ></i></div>
+                    <div class="icone_trend"><i class="fas fa-chart-line fa-lg" width="200px" ></i></div>
                 </div>
                 <div class="hotel7">
                     <div class="imghotel7"></div>
@@ -175,6 +223,60 @@
                             </div>
                         </div>
                         
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section trendings tablette -->
+        <section >
+            <div class="conteneur4_tab">
+                <div class="titre4">
+                    <h1>Les plus populaires</h1>
+                    <div class="icone_trend"><i class="fas fa-chart-line fa-lg"></i></div>
+                </div>
+                <div class="hotel7_8">
+                    <div class="hotel7">
+                        <div class="imghotel7"></div>
+                        <div id="description">
+                            <h3>Hôtel Le soleil du matin</h3>
+                            <p> Nuit à partir de 128€</p>
+                            <div class="stars">
+                                <i class="fa fa-star bleu"></i>
+                                <i class="fa fa-star bleu"></i>
+                                <i class="fa fa-star bleu"></i>
+                                <i class="fa fa-star bleu"></i>
+                                <i class="fa fa-star bleu"></i>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="hotel8">
+                        <div class="imghotel8"></div>
+                        <div id="description"> 
+                            <h3>Au coeur de l'eau Chambre d'hôtes</h3>
+                            <p> Nuit à partir de 71€</p>
+                            <div class="stars">
+                                <i class="fa fa-star bleu"></i>
+                                <i class="fa fa-star bleu"></i>
+                                <i class="fa fa-star bleu"></i>
+                                <i class="fa fa-star bleu"></i>
+                                <i class="fa fa-star bleu"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hotel9">
+                    <div class="imghotel9"></div>
+                    <div id="description">
+                        <h3>Hôtel Tout bleu et blanc</h3>
+                        <p> Nuit à partir de 158€</p>
+                        <div class="stars">
+                            <i class="fa fa-star bleu"></i>
+                            <i class="fa fa-star bleu"></i>
+                            <i class="fa fa-star bleu"></i>
+                            <i class="fa fa-star bleu"></i>
+                            <i class="fa fa-star "></i>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -273,6 +375,110 @@
                         </div>
                     </div>
                 </div>
+                <div class="plus"><h2 > Afficher plus </h2></div>
+            </div>
+        </section>
+
+        <!-- Section hébegement tablette -->
+        <section class="section_hebergements_tab">
+            <div class="conteneur3_tab">
+                <div class="titre3"><h1 id="ancre1" > Hébergements à Marseille</h1></div>
+                <div class="conteneur3_1">
+                    <div id="hotel" class="hotel1">
+                        <div class="imghotel"></div>
+                        <div class="descriptionimghotel">
+                            <h3  class="nomhotel">Auberge de la Cannebière</h3>
+                            <p class="txt"> Nuit à partir de 25€</p>
+                            <div class="stars">
+                                <i class="fa fa-star bleu"></i>
+                                <i class="fa fa-star bleu"></i>
+                                <i class="fa fa-star bleu"></i>
+                                <i class="fa fa-star bleu"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hotel2">
+                        <div id="hotel" class="imghotel2"></div>
+                        <div class="descriptionimghotel">
+                            <h3 class="nomhotel">Hôtel du port</h3>
+                            <p class="txt"> Nuit à partir de 52€</p>
+                            <!--note étoiles-->
+                            <div class="stars">
+                                <i class="fa fa-star bleu"></i>
+                                <i class="fa fa-star bleu"></i>
+                                <i class="fa fa-star bleu"></i>
+                                <i class="fa fa-star bleu"></i>
+                                <i class="fa fa-star bleu"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="conteneur3_2">
+                    <div id="hotel" class="hotel3">
+                        <div class="imghotel3"></div>
+                        <div class="descriptionimghotel">
+                            <h3 class="nomhotel">Hôtel Les mouettes</h3>
+                            <p class="txt"> Nuit à partir de 76€</p>
+                            <!--note étoiles-->
+                            <div class="stars">
+                                <i class="fa fa-star bleu"></i>
+                                <i class="fa fa-star bleu"></i>
+                                <i class="fa fa-star bleu"></i>
+                                <i class="fa fa-star bleu"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="hotel" class="hotel4">
+                        <div class="imghotel4"></div>
+                        <div class="descriptionimghotel">
+                            <h3 class="nomhotel">Hôtel de la mer</h3>
+                            <p class="txt"> Nuit à partir de 46€</p>
+                            <!--note étoiles-->
+                            <div class="stars">
+                                <i class="fa fa-star bleu"></i>
+                                <i class="fa fa-star bleu"></i>
+                                <i class="fa fa-star bleu"></i>
+                                <i class="fa fa-star "></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+                <div class="conteneur3_3">
+                    <div id="hotel" class="hotel5">
+                        <div class="imghotel5"></div>
+                        <div class="descriptionimghotel">
+                            <h3 class="nomhotel">Auberge Le panier</h3>
+                            <p class="txt"> Nuit à partir de 23€</p>
+                            <!--note étoiles-->
+                            <div class="stars">
+                                <i class="fa fa-star bleu"></i>
+                                <i class="fa fa-star bleu"></i>
+                                <i class="fa fa-star bleu"></i>
+                                <i class="fa fa-star bleu"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="hotel" class="hotel6">
+                       <!-- <img id="imghotel" src="images/hebergements/4_small/chez amina.jpg" height="80px" width="150px">-->
+                        <div class="imghotel6"></div>
+                        <div class="descriptionimghotel">
+                            <h3 class="nomhotel">Hôtel chez Amina</h3>
+                            <p class="txt"> Nuit à partir de 96€</p>
+                            <!--note étoiles-->
+                            <div class="stars">
+                                <i class="fa fa-star bleu"></i>
+                                <i class="fa fa-star bleu"></i>
+                                <i class="fa fa-star bleu"></i>
+                                <i class="fa fa-star bleu"></i>
+                                <i class="fa fa-star bleu"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
                 <div class="plus"><h2 > Afficher plus </h2></div>
             </div>
         </section>
@@ -380,7 +586,7 @@
         <div class="conteneur4">
             <div class="titre4">
                 <div><h1>Les plus populaires</h1></div>
-                <div class="icone_trend"><i class="fas fa-chart-line"></i></div>
+                <div class="icone_trend"><i class="fas fa-chart-line fa-lg"></i></div>
             </div>
             
             <div class="hotel7">
@@ -458,7 +664,46 @@
                 </div>
              </div>        
         </section>
-
+        
+        <!-- Section 3 activités-->
+        <section id="section_activites_tab">
+            <h1 id="ancre2" class="titre5"> Activités à Marseille</h1>
+            <div class="conteneur5_tab">
+                <div class="conteneur5_1">
+                    <div class="activite1">
+                        <div class="imgactivite1"></div>
+                        <div class="titreimgactivite"><h3 > Vieux Port</h3></div>
+                    </div>
+                    <div class="activite2_3">
+                        <div class="activite2">
+                            <div class="imgactivite2"></div>
+                            <h3 class="titreimgactivite"> Fort de Pomègues</h3>
+                        </div>
+                        <div class="activite3">
+                            <div class="imgactivite3"></div>
+                            <h3 class="titreimgactivite"> Iles du Frioul</h3> 
+                        </div>
+                    </div>
+                </div>
+                <div class="conteneur5_2">
+                    <div class="activite5_6">
+                        <div class="activite5">
+                            <div class="imgactivite5"></div>
+                            <h3 class="titreimgactivite"> Notre Dame de la Garde </h3>
+                        </div>
+                        <div class="activite6">
+                            <div class="imgactivite6"></div>
+                            <h3 class="titreimgactivite"> Parc Longchamp</h3>
+                        </div>
+                    </div>
+                    <div class="activite4">
+                        <div class="imgactivite4"></div>
+                        <div class="titreimgactivite"><h3> Parc National des Calanques</h3></div>
+                    </div>
+                </div>
+            </div>
+            </section>
+        
         <!-- Section 3 activités-->
         <section id="section_activites">
         <h1 id="ancre2" class="titre5"> Activités à Marseille</h1>
