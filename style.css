@@ -12,6 +12,7 @@
 body{
     width: 1450px;
     margin: auto;
+    padding-left: 25px;
 }
 
 #block_page{
@@ -22,6 +23,7 @@ body{
 a{
     text-decoration:none;
     cursor: pointer;
+    color: black;
 }   
 
 .nav_hebergements{
@@ -120,20 +122,6 @@ p{
     flex-direction: column;
 }
 
-.part1{
-    display: flex;
-    justify-content: space-between;
-    width: 90%;
-    margin: auto;
-    align-items: center;
-}
-
-.part2{
-    display: flex;
-    justify-content: space-around;
-    border-bottom: solid 3px #F2F2F2;
-}
-
 .logo_reservia{
     width: 65%;
 }
@@ -211,7 +199,8 @@ p{
 }
 
 .economique{
-    width: 18%;
+    width: 187px;
+    height: 50px;
     display: flex;
     border: 2px #e2e2e2 solid;
     border-radius: 50px;
@@ -219,7 +208,8 @@ p{
 }
 
 .famillial{
-    width: 15%;
+    width: 157px;
+    height: 50px;
     display: flex;
     align-items: center;
     border: 2px #e2e2e2 solid;
@@ -228,7 +218,8 @@ p{
 }
 
 .romantique{
-    width: 17%;
+    width: 177px;
+    height: 50px;
     display: flex;
     align-items: center;
     border: 2px #e2e2e2 solid;
@@ -237,7 +228,8 @@ p{
 }
 
 .animaux{
-    width: 24%;
+    width: 250px;
+    height: 50px;
     display: flex;
     align-items: center;
     border: 2px #e2e2e2 solid;
@@ -246,8 +238,8 @@ p{
 }
 
 .icone_economique{
-    width: 27%;
-    height: 100%;
+    width: 53px;
+    height: 50px;
     display: flex;
     justify-content: center;
     background-color: #DEEBFF;
@@ -256,8 +248,8 @@ p{
 }
 
 .icone_famillial{
-    width: 34%;
-    height: 100%;
+    width: 53px;
+    height: 50px;
     padding: 2px;
     display: flex;
     justify-content: center;
@@ -267,8 +259,8 @@ p{
 }
 
 .icone_romantique{
-    width: 30%;
-    height: 100%;
+    width: 53px;
+    height: 50px;
     display: flex;
     justify-content: center;
     background-color: #DEEBFF;
@@ -277,8 +269,8 @@ p{
 }
 
 .icone_animaux{
-    width: 23%;
-    height: 100%;
+    width: 53px;
+    height: 50px;
     display: flex;
     justify-content: center;
     background-color: #DEEBFF;
@@ -503,7 +495,7 @@ p{
     height: 100%;
 }
 
-footer{
+.footer{
     background-color: #F2F2F2;
     display: flex;
     justify-content: flex-start;
@@ -627,7 +619,7 @@ footer{
     background-size: cover;
 }
 
-#description{
+.description{
     padding-left: 3%;
 }
 
