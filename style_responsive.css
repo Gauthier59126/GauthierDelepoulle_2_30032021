@@ -32,6 +32,10 @@
 
 @media all and (max-width: 375px){
 
+    .conteneur1_tab{
+        display: none;
+    }
+
     .titre1_2_tab{
         display: none;
     }

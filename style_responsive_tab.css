@@ -1,4 +1,8 @@
 @media all and (min-width: 780px){
+    .conteneur1_tab{
+        display: none;
+    }
+
     .titre1_2_tab{
     display: none;
     }
@@ -49,6 +53,10 @@
     }
 
     .conteneur1_pc{
+        display: none;
+    }
+
+    .conteneur1_tab{
         display: flex;
         justify-content: space-between;
     }

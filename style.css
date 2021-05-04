@@ -122,8 +122,12 @@ p{
     flex-direction: column;
 }
 
-.logo_reservia{
+.div_logo_reservia{
     width: 65%;
+}
+
+.logo_reservia{
+    cursor: pointer;
 }
 
 .navigation{
@@ -160,6 +164,7 @@ p{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    cursor: pointer;
 }
 
 .clavier{
@@ -171,13 +176,17 @@ p{
     width: 30%;
     background-color:#0065FC; 
     border-radius: 0px 10px 10px 0px;
-    cursor: pointer;
+    align-content: center;
     z-index: 1;
 }
 
 .bouton_rechercher{
+    height: 80%;
+    padding-top: 15px;
     color: white;
+    align-items: center i !important;
     text-align: center;
+    margin: auto;
 }
 
 .lien_span{
