@@ -17,23 +17,33 @@
         <!-- Header -->
         <header>
             <div class="conteneur1_pc">
-                <div class="logo_reserevia">
-                <div> <img src="images/logo/Reservia@3x.png" height="60" width="140"  alt="logo_reservia"></div> 
+                <div class="div_logo_reserevia">
+                    <div class="logo_reservia"> <img src="images/logo/Reservia@3x.png" height="60" width="140"  alt="logo_reservia"></div> 
                 </div>
                 <div class="navigation">
                     <div class="nav_hebergements"><h4><a href="#ancre1" title="Hébergements disponibles à Marseille">Hébergements</a> </h4> </div>
                     <div class="nav_activites"><h4><a href="#ancre2" title="Les activités à Marseille">Activités</a> </h4> </div> 
-                    <div class="nav_signup"> <h4> <a href="https://openclassrooms.com/fr/">S'inscrire</a> </h4> </div>
+                    <div class="nav_signup"> <h4> <a href="">S'inscrire</a> </h4> </div>
+                </div>
+            </div>
+            <div class="conteneur1_tab">
+                <div class="div_logo_reserevia">
+                    <div class="logo_reservia"> <img src="images/logo/Reservia@3x.png" height="60" width="140"  alt="logo_reservia"></div> 
+                </div>
+                <div class="navigation">
+                    <div class="nav_hebergements"><h4><a href="#ancre1_tab" title="Hébergements disponibles à Marseille">Hébergements</a> </h4> </div>
+                    <div class="nav_activites"><h4><a href="#ancre2_tab" title="Les activités à Marseille">Activités</a> </h4> </div> 
+                    <div class="nav_signup"> <h4> <a href="">S'inscrire</a> </h4> </div>
                 </div>
             </div>
             <div id="conteneur1_mobile">
                 <div class="part1">
                     <div class="logo_reservia"> <img src="images/logo/Reservia@3x.png"  height="50" width="110" alt="logo_reservia"></div> 
-                    <div class="nav_signup"><a href="https://openclassrooms.com/fr/">S'inscrire</a>  </div>
+                    <div class="nav_signup"><a href="">S'inscrire</a>  </div>
                 </div>
                 <div class="part2">
-                    <div class="nav_hebergements_mobile"><h4><a href="#ancre1" title="Hébergements disponibles à Marseille">Hébergements</a> </h4> </div>
-                    <div class="nav_activites_mobile"><h4><a href="#ancre2" title="Les activités à Marseille">Activités</a> </h4> </div> 
+                    <div class="nav_hebergements_mobile"><h4><a href="#ancre1_mobile" title="Hébergements disponibles à Marseille">Hébergements</a> </h4> </div>
+                    <div class="nav_activites_mobile"><h4><a href="#ancre2_mobile" title="Les activités à Marseille">Activités</a> </h4> </div> 
                 </div>
             </div>
         </header>
@@ -49,39 +59,38 @@
                 <h1 class="titre1_mobile"> Trouvez votre hébergement pour des vacances de rêve </h1>
                 <p class="titre2"> En plein centre ville ou en pleine nature</p>
             </div>
-            <!--case de recherche ???-->
             <div class="div_recherche">
                 <div class="icone_position"> <i class="fas fa-map-marker-alt"></i></div>
-                <div class="clavier"> <!--<h2> Marseille, France</h2>-->
+                <div class="clavier">
                     <form method="post" action="traitement.php">
                         <p>
                             <input type="text" name="Rechercher" id="rechercher" placeholder="Rechercher">
                         </p>
                     </form>
                 </div>
-                <div class="bouton"> <h2 class="bouton_rechercher"> Rechercher</h2><a href=""> <!--<span class="lien_span"></span>--></a></div> 
+                <div class="bouton"><a href=""> <h2 class="bouton_rechercher"> Rechercher</h2></a></div> 
             </div>
             <div class="div_recherche_mobile">
                 <div class="icone_position"> <i class="fas fa-map-marker-alt"></i></div>
-                <div class="clavier"> <!--<h2> Marseille, France</h2>-->
+                <div class="clavier">
                     <form method="post" action="traitement.php">
                         <p>
                             <input type="text" name="Rechercher" placeholder="Rechercher">
                         </p>
                     </form>
                 </div>
-                <div class="bouton"> <i class="fas fa-search"></i><a href=""> <!--<span class="lien_span"></span>--></a></div> 
+                <div class="bouton"> <i class="fas fa-search"></i><a href=""></a></div> 
             </div>
             <div class="div_recherche_tab">
                 <div class="icone_position"> <i class="fas fa-map-marker-alt"></i></div>
-                <div class="clavier"> <!--<h2> Marseille, France</h2>-->
+                <div class="clavier">
                     <form method="post" action="traitement.php">
                         <p>
                             <input type="text" name="Rechercher"  placeholder="Rechercher">
                         </p>
                     </form>
                 </div>
-                <div class="bouton"> <i class="fas fa-search fa-lg"></i><a href=""> <span class="lien_span"></span></a></div> 
+                <div class="bouton"> <i class="fas fa-search fa-lg"></i><a href=""> </a></div> 
             </div>
             <div class="filtres">
                 <div><h2> Filtres </h2></div>
@@ -233,7 +242,7 @@
         <section >
             <div class="conteneur4_tab">
                 <div class="titre4">
-                    <h1>Les plus populaires</h1>
+                    <h1 id="ancre2_tab">Les plus populaires</h1>
                     <div class="icone_trend"><i class="fas fa-chart-line fa-lg"></i></div>
                 </div>
                 <div class="hotel7_8">
@@ -286,7 +295,7 @@
         <!-- Section hébergements mobile-->
         <section class="section_hebergements_mobile">
             <div class="conteneur3_mobile">
-                <div class="titre3"><h1 id="ancre1" > Hébergements à Marseille</h1></div>
+                <div class="titre3"><h1 id="ancre1_mobile"> Hébergements à Marseille</h1></div>
                 <div class="hotel1">
                     <div class="imghotel"></div>
                     <div class="descriptionimghotel">
@@ -383,7 +392,7 @@
         <!-- Section hébegement tablette -->
         <section class="section_hebergements_tab">
             <div class="conteneur3_tab">
-                <div class="titre3"><h1> Hébergements à Marseille</h1></div>
+                <div class="titre3"><h1 id="ancre1_tab"> Hébergements à Marseille</h1></div>
                 <div class="conteneur3_1">
                     <div class="hotel1">
                         <div class="imghotel"></div>
@@ -484,10 +493,10 @@
             </div>
         </section>
 
-        <!-- Section 2 hébergements et trendings -->
+        <!-- Section hébergements et trendings -->
         <section class="section_hebergements_trending">
         <div class="conteneur3">
-            <div class="titre3"><h1> Hébergements à Marseille</h1></div>
+            <div class="titre3"><h1 id="ancre1"> Hébergements à Marseille</h1></div>
             <div class="conteneur3_1">
                 <div class="hotel1">
                     <div class="imghotel"></div>
@@ -638,7 +647,7 @@
         <!-- Section actvités mobile-->
         <section class="section_activites_mobile">
             <div class="conteneur5_mobile">
-                <h1 id="ancre2" class="titre5"> Activités à Marseille</h1>
+                <h1 id="ancre2_mobile" class="titre5"> Activités à Marseille</h1>
                 <div class="activite1">
                     <div class="imgactivite1"></div>
                     <h3 class="titreimgactivite"> Vieux port</h3>
@@ -666,7 +675,7 @@
              </div>        
         </section>
         
-        <!-- Section 3 activités tablette-->
+        <!-- Section activités tablette-->
         <section id="section_activites_tab">
             <h1 class="titre5"> Activités à Marseille</h1>
             <div class="conteneur5_tab">
@@ -705,9 +714,9 @@
             </div>
         </section>
         
-        <!-- Section 3 activités-->
+        <!-- Section activités-->
         <section id="section_activites">
-        <h1 class="titre5"> Activités à Marseille</h1>
+        <h1 class="titre5" id="ancre2"> Activités à Marseille</h1>
         <div class="conteneur5">
             <div class="activite1">
                 <div class="imgactivite1"></div>
