@@ -750,8 +750,7 @@
         display: flex;
         justify-content: space-between;
         margin: auto;
-        width: 90%;
-        margin-left: 3%;
+        width: 85%;
     }
 
     .section_footer1{
