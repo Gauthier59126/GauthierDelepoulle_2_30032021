@@ -81,7 +81,7 @@
     
     h1{
         font-family: 'releway_bold';
-        font-size: 22px;
+        font-size: 20px;
     }
     
     h2{
@@ -250,7 +250,7 @@
         height: 100%;
         padding-left: 5%;
         border: none;
-        font-size: 16x;
+        font-size: 16px;
         font-family: 'releway_bold';
         color: black;
         align-items: center;

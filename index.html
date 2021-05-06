@@ -31,9 +31,9 @@
                     <div class="logo_reservia"> <img src="images/logo/Reservia@3x.png" height="60" width="140"  alt="logo_reservia"></div> 
                 </div>
                 <div class="navigation">
-                    <div class="nav_hebergements"><h4><a href="#ancre1_tab" title="Hébergements disponibles à Marseille">Hébergements</a> </h4> </div>
-                    <div class="nav_activites"><h4><a href="#ancre2_tab" title="Les activités à Marseille">Activités</a> </h4> </div> 
-                    <div class="nav_signup"> <h4> <a href="">S'inscrire</a> </h4> </div>
+                    <div class="nav_hebergements"><h4 class="titre_nav_tab"><a href="#ancre1_tab" title="Hébergements disponibles à Marseille">Hébergements</a> </h4> </div>
+                    <div class="nav_activites"><h4 class="titre_nav_tab"><a href="#ancre2_tab" title="Les activités à Marseille">Activités</a> </h4> </div> 
+                    <div class="nav_signup"> <h4 class="titre_nav_tab"> <a href="">S'inscrire</a> </h4> </div>
                 </div>
             </div>
             <div id="conteneur1_mobile">
@@ -53,7 +53,7 @@
         <div class="conteneur2">
             <div class="titre1_2">
                 <h1 class="titre1_pc"> Trouvez votre hébergement pour des vacances de rêve </h1>
-                <p> En plein centre ville ou en pleine nature</p>
+                <p class="titre2_pc"> En plein centre ville ou en pleine nature</p>
             </div>
             <div class="titre1_2_mobile">
                 <h1 class="titre1_mobile"> Trouvez votre hébergement pour des vacances de rêve </h1>
@@ -61,14 +61,10 @@
             </div>
             <div class="div_recherche">
                 <div class="icone_position"> <i class="fas fa-map-marker-alt"></i></div>
-                <div class="clavier">
-                    <form method="post" action="traitement.php">
-                        <p>
-                            <input type="text" name="Rechercher" id="rechercher" placeholder="Rechercher">
-                        </p>
-                    </form>
-                </div>
-                <div class="bouton"><a href=""> <h2 class="bouton_rechercher"> Rechercher</h2></a></div> 
+                <form>
+                    <input type="text" name="Rechercher" id="rechercher" placeholder="Rechercher">
+                </form>
+                <button class="bouton_rechercher bouton"> Rechercher</button>
             </div>
             <div class="div_recherche_mobile">
                 <div class="icone_position"> <i class="fas fa-map-marker-alt"></i></div>
@@ -83,13 +79,9 @@
             </div>
             <div class="div_recherche_tab">
                 <div class="icone_position"> <i class="fas fa-map-marker-alt"></i></div>
-                <div class="clavier">
                     <form method="post" action="traitement.php">
-                        <p>
-                            <input type="text" name="Rechercher"  placeholder="Rechercher">
-                        </p>
+                        <input type="text" name="Rechercher"  placeholder="Rechercher">
                     </form>
-                </div>
                 <div class="bouton"> <i class="fas fa-search fa-lg"></i><a href=""> </a></div> 
             </div>
             <div class="filtres">
@@ -603,7 +595,7 @@
                 <div class="imghotel7"></div>
                 <div class="description">
                     <h3>Hôtel Le soleil du matin</h3>
-                    <p> Nuit à partir de 128€</p>
+                    <p class="txt_trending"> Nuit à partir de 128€</p>
                     <div class="stars">
                         <i class="fa fa-star bleu"></i>
                         <i class="fa fa-star bleu"></i>
@@ -617,7 +609,7 @@
                 <div class="imghotel8"></div>
                 <div class="description"> 
                     <h3>Au coeur de l'eau Chambre d'hôtes</h3>
-                    <p> Nuit à partir de 71€</p>
+                    <p class="txt_trending"> Nuit à partir de 71€</p>
                     <div class="stars">
                         <i class="fa fa-star bleu"></i>
                         <i class="fa fa-star bleu"></i>
@@ -631,7 +623,7 @@
                 <div class="imghotel9"></div>
                 <div class="description">
                     <h3>Hôtel Tout bleu et blanc</h3>
-                    <p> Nuit à partir de 158€</p>
+                    <p class="txt_trending"> Nuit à partir de 158€</p>
                     <div class="stars">
                         <i class="fa fa-star bleu"></i>
                         <i class="fa fa-star bleu"></i>

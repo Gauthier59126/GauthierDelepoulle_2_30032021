@@ -28,19 +28,19 @@ a{
 
 .nav_hebergements{
     font-family: 'releway_regular';
-    font-size: 16px;
+    font-size: 20px;
     color: black;
 }
 
 .nav_activites{
     font-family: 'releway_regular';
-    font-size: 16px;
+    font-size: 20px;
     color: black;
 }
 
 .nav_signup {
     font-family: 'releway_bold';
-    font-size: 16px;
+    font-size: 20px;
     color: #0065FC;
 }
 
@@ -74,22 +74,9 @@ a{
     padding-top: 20px;
 }
 
-input{
-    width: 210px;
-    height: 20px;
-    border: none;
-    font-size: 14px;
-    font-family: 'releway_regular';
-}
-
-input:focus{
-    outline: none;
-}
-
-
 h1{
     font-family: 'releway_bold';
-    font-size: 24px;
+    font-size: 26px;
 }
 
 h2{
@@ -109,7 +96,7 @@ h3{
 
 p{
     font-family: 'releway_regular';
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .conteneur1_pc{
@@ -148,17 +135,17 @@ p{
 
 .div_recherche{
     width: 30%;
-    height: 100%;
+    height: 50px;
     display: flex;
     justify-content: space-around;
-    border: 2px #e2e2e2 solid;
+    /*border: 2px #e2e2e2 solid; */
     border-radius: 15px;
    
 }
 
 
 .icone_position{
-    width: 12%;
+    width: 65px;
     background-color: #F2F2F2;
     border-radius: 15px 0px 0px 15px;
     display: flex;
@@ -172,21 +159,44 @@ p{
     padding-left: 5%;
 }
 
+form{
+    width: 100%;
+    height: 100%;
+}
+
+input{
+    width: 99%;
+    height: 90%;
+    border: none;
+    padding-left: 5px;
+    font-size: 14px;
+    font-family: 'releway_regular';
+    border-bottom: 1.5px solid #F2F2F2;
+    border-top: 1.5px solid #F2F2F2;
+}
+
+input:focus{
+    outline: none;
+}
+
 .bouton{
     width: 30%;
     background-color:#0065FC; 
     border-radius: 0px 10px 10px 0px;
     align-content: center;
-    z-index: 1;
+    z-index: 1; 
 }
 
 .bouton_rechercher{
-    height: 80%;
-    padding-top: 15px;
+    height: 50px;
     color: white;
-    align-items: center i !important;
+    font-family: 'releway_bold';
+    align-items: center !important;
     text-align: center;
     margin: auto;
+    outline: none;
+    border-color: transparent;
+    cursor: pointer;
 }
 
 .lien_span{
@@ -327,10 +337,13 @@ p{
     justify-content: center;
 }
 
+.icone_info{
+    margin-right: 20px;
+}
+
 .texte500{
-    width: 30%;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -638,7 +651,11 @@ p{
 
 .txt{
     margin: 0px;
-    font-size: 15px;
+    font-size: 16px;
+}
+
+.txt_trending{
+    font-size: 16px;
 }
 
 .descriptionimghotel{
@@ -797,6 +814,7 @@ p{
     flex-direction: column;
     justify-content: center;
     margin-left: 4%;
+    font-size: 18px;
 }
 
 
@@ -809,8 +827,10 @@ p{
 
 .titre_footer{
     cursor: pointer;
+    font-size: 20px;
 }
 
 .txt_footer{
     cursor: pointer;
+    font-size: 18px;
 }

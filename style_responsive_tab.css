@@ -32,15 +32,8 @@
     }
 }
 
-
-
-
 @media all and (max-width: 780px) and (min-width: 376px){
-    html{
-        width: 780px;
-        margin: auto;
-    }
-    
+      
     body{
         width: 780px;
         margin: auto;
@@ -50,6 +43,40 @@
     #block_page{
         width: 85%;
         margin: auto;
+    }
+
+    html{
+        width: 780px;
+        margin: auto;
+    }
+
+    h1{
+        font-family: 'releway_bold';
+        font-size: 22px;
+    }
+    
+    h2{
+        font-family: 'releway_bold';
+        font-size: 18px;
+    }
+    
+    h3{
+        font-family: 'releway_bold';
+        font-size: 16px;
+    }
+    
+    /*h4{
+        font-family: 'releway_regular';
+        font-size: 16px;
+    }*/
+    
+    p{
+        font-family: 'releway_regular';
+        font-size: 16px;
+    }
+
+    .titre_nav_tab{
+        font-size: 16px;
     }
 
     .conteneur1_pc{
@@ -74,6 +101,14 @@
     .conteneur2{
         margin-bottom: 3%;
     }
+
+    .titre1_pc{
+        font-size: 22px;
+    }
+
+    .titre2_pc{
+        font-size: 16px;
+    }
     
     .div_recherche{
     display: none;
@@ -81,10 +116,10 @@
 
     .div_recherche_tab{
         width: 50%;
-        height: 100%;
+        height: 50px;
         display: flex;
         justify-content: space-between;
-        border: 2px #e2e2e2 solid;
+      
         border-radius: 15px;
        
     }
@@ -104,6 +139,25 @@
         padding-left: 5%;
     }
     
+    form{
+        width: 100%;
+        height: 100%;
+    }
+    
+    input{
+        width: 99%;
+        height: 90%;
+        border: none;
+        font-size: 14px;
+        font-family: 'releway_regular';
+        border-bottom: 1.5px solid #F2F2F2;
+        border-top: 1.5px solid #F2F2F2;
+    }
+    
+    input:focus{
+        outline: none;
+    }
+
     .bouton{
         width: 20%;
         background-color:#0065FC; 
