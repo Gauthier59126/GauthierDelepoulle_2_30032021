@@ -28,19 +28,19 @@ a{
 
 .nav_hebergements{
     font-family: 'releway_regular';
-    font-size: 20px;
+    font-size: 22px;
     color: black;
 }
 
 .nav_activites{
     font-family: 'releway_regular';
-    font-size: 20px;
+    font-size: 22px;
     color: black;
 }
 
 .nav_signup {
     font-family: 'releway_bold';
-    font-size: 20px;
+    font-size: 22px;
     color: #0065FC;
 }
 
@@ -827,10 +827,10 @@ input:focus{
 
 .titre_footer{
     cursor: pointer;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .txt_footer{
     cursor: pointer;
-    font-size: 18px;
+    font-size: 16px;
 }
