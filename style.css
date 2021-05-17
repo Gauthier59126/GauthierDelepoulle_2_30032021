@@ -26,6 +26,11 @@ a{
     color: black;
 }   
 
+.reservia{
+    width: 180px;
+    height: 78px;
+}
+
 .nav_hebergements{
     font-family: 'releway_regular';
     font-size: 22px;
