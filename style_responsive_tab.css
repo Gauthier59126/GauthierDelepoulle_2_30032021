@@ -7,7 +7,7 @@
     display: none;
     }
 
-    .div_recherche_tab{
+    /*.div_recherche_tab{
     display: none;
     }
 
@@ -29,16 +29,12 @@
 
     .footer_tab{
         display: none;
-    }
+    }*/
 }
 
 @media all and (max-width: 780px) and (min-width: 376px){
       
-    body{
-        width: 780px;
-        margin: auto;
-        padding-left: 0px;
-    }
+
     
     #block_page{
         width: 85%;
@@ -75,6 +71,10 @@
         font-size: 16px;
     }
 
+    a{
+        font-family: 'releway_regular';
+    }
+
     .reservia{
         width: 140px;
         height: 60px;
@@ -85,16 +85,11 @@
     }
 
     .conteneur1_pc{
-        display: none;
-    }
-
-    .conteneur1_tab{
-        display: flex;
-        justify-content: space-between;
+        align-items: center;
     }
     
     .logo_reservia{
-        width: 65%;
+        width: 50%;
     }
     
     .navigation{
@@ -103,8 +98,14 @@
         width: 50%;
     }
 
+    .nav_hebergements, .nav_activites, .nav_signup{
+        font-family: 'releway_regular';
+        font-size: 18px;
+        padding-top: 20px;
+    }
+
     .conteneur2{
-        margin-bottom: 3%;
+        margin-bottom: 2%;
     }
 
     .titre1_pc{
@@ -116,22 +117,15 @@
     }
     
     .div_recherche{
-    display: none;
-    }
-
-    .div_recherche_tab{
         width: 50%;
         height: 50px;
         display: flex;
         justify-content: space-between;
-      
         border-radius: 15px;
-       
     }
-    
-    
+        
     .icone_position{
-        width: 17%;
+        width: 22%;
         background-color: #F2F2F2;
         border-radius: 15px 0px 0px 15px;
         display: flex;
@@ -164,12 +158,13 @@
     }
 
     .bouton{
-        width: 20%;
+        width: 22%;
         background-color:#0065FC; 
         border-radius: 0px 15px 15px 0px;
         display: flex;
         justify-content: center;
         align-items: center;
+        font-size: 12px;
     }
     
     .fa-search{
@@ -186,19 +181,14 @@
     }
 
     .filtres{
-        display: none;
-    }
-
-    .filtres_tab{
         width: 100%;
         height: 125px;
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
         justify-content: space-between;
         margin-top : 4%;
         margin-bottom : 2%;
         border-radius: 10px;
-        
     }
     
     .eco_famillial_rom{
@@ -301,35 +291,34 @@
     }
 
     .texte500{
-        width: 66%;
+        width: 68%;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
 
     .section_hebergements_trending{
-        display: none;
+        width: 100%;
+        height: 1340px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
     }
 
-    .conteneur4_tab {
+    .conteneur4 {
+        order: -1;
         width: 94%;
-        height: 350px;
+        height: 360px;
         background-color: #F2F2F2;
         padding: 20px;
         border-radius: 20px;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
         justify-content: space-around;
-        margin-bottom: 3%;
     }
     
-    .hotel7_8{
-        display: flex;
-        justify-content: space-around;
-        width: 100%;
-    }
-    
-    .hotel7{
+    .hotel7, .hotel8, .hotel9{
         display: flex;
         background-color: white;
         height: 130px;
@@ -340,52 +329,20 @@
         cursor: pointer;
         margin: auto;
     }
-    
-    .hotel8{
-        display: flex;
-        background-color: white;
-        height: 130px;
-        width: 45%;
-        border-radius: 20px;
-        padding: 5px;
-        box-shadow:  2px 2px 20px #b6b6b6;
-        cursor: pointer;
-        margin: auto;
-    }
-    
+
     .hotel9{
-        display: flex;
-        background-color: white;
-        height: 130px;
-        width: 45%;
-        border-radius: 20px;
-        padding: 5px;
-        box-shadow:  2px 2px 20px #b6b6b6;
-        margin-left: 2%;
+        margin-left: 10px;
+    }
+
+    .div_img2{
+        max-width: 40%;
+        height: auto;
     }
     
-    .imghotel7{
-        width: 35%;
+    .imghotel2{
+        width: 100%;
         height: 100%;
         border-radius: 15px 0px 0px 15px;
-        background-image: url(images/hebergements/4_small/soleil\ du\ matin.jpg);
-        background-size: cover;
-    }
-    
-    .imghotel8{
-        width: 35%;
-        height: 100%;
-        border-radius: 15px 0px 0px 15px;
-        background-image: url(images/hebergements/4_small/au\ coeur\ de\ leau.jpg);
-        background-size: cover;
-    }
-    
-    .imghotel9{
-        width: 35%;
-        height: 100%;
-        border-radius: 15px 0px 0px 15px;
-        background-image: url(images/hebergements/4_small/tout\ bleu\ et\ blanc.jpg);
-        background-size: cover;
     }
     
     .titre4{
@@ -401,25 +358,50 @@
         cursor: pointer;
     }
 
-    .conteneur3_tab {
+    .description{
+        width: 90%;
+        height: 110px;
+        margin-left: 2%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-top: 10px;
+    }
+
+    .nomhotel_trending{
+        line-height: 20px;
+        margin: 0;
+    }
+    
+    .txt_trending{
+        line-height: 0px;
+        height: 30px;
+        width: 100%;
+    }
+
+    .conteneur3 {
         width: 94%;
+        height: 900px;
         background-color: #F2F2F2;
         border-radius: 20px;
         display: flex;
-        flex-direction: column;
-        justify-content: space-around;
+        flex-direction: row;
         padding: 20px;
+        margin-top: 50px;
     }
     
-    .conteneur3_1{
-        height: 230px;
+    .conteneur3_1, .conteneur3_2{
+        width: 45%;
+        height: 700px;
         display: flex;
+        flex-direction: column;
         justify-content: space-around;
+        padding-top: 90px;
+        padding-right: 40px;
     }
+
     .conteneur3_2{
-        height: 230px;
-        display: flex;
-        justify-content: space-around;
+        margin-right: 60px;
     }
     
     .conteneur3_3{
@@ -427,148 +409,44 @@
         display: flex;
         justify-content: space-around;
     }
-    
-    
-    
-    
-    
-    .hotel1{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        background-color: white;
-        width: 45%;
-        height: 205px;
-        padding: 5px;
-        border-radius: 20px;
-        box-shadow:  2px 2px 20px #b6b6b6;
-        cursor: pointer;
-        margin: auto;
-    }
-    
-    .hotel2{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        background-color: white;
-        width: 45%;
-        height: 205px;
-        padding: 5px;
-        border-radius: 20px;
-        box-shadow:  2px 2px 20px #b6b6b6;
-        cursor: pointer;
-        margin: auto;
-    }
-    
-    .hotel3{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        background-color: white;
-        width: 45%;
-        height: 205px;
-        padding: 5px;
-        border-radius: 20px;
-        box-shadow:  2px 2px 20px #b6b6b6;
-        cursor: pointer;
-        margin: auto;
-    }
-    
-    .hotel4{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        background-color: white;
-        width: 45%;
-        height: 205px;
-        padding: 5px;
-        border-radius: 20px;
-        box-shadow:  2px 2px 20px #b6b6b6;
-        cursor: pointer;
-        margin: auto;
-    }
-    
-    .hotel5{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        background-color: white;
-        width: 45%;
-        height: 205px;
-        padding: 5px;
-        border-radius: 20px;
-        box-shadow:  2px 2px 20px #b6b6b6;
-        cursor: pointer;
-        margin: auto;
-    }
-    
-    .hotel6{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        background-color: white;
-        width: 45%;
-        height: 205px;
-        padding: 5px;
-        border-radius: 20px;
-        box-shadow:  2px 2px 20px#b6b6b6;
-        cursor: pointer;
-        margin: auto;
+
+    .div_img{
+        width: 100%;
+        height: 60%;
     }
     
     .imghotel{
         width: 100%;
-        height: 60%;
+        height: 125px;
         border-radius: 15px 15px 0px 0px;
-        background-image: url(images/hebergements/4_small/cannebiere.jpg);
-        background-size: cover;
     }
     
-    .imghotel2{
-        width: 100%;
-        height: 60%;
-        border-radius: 15px 15px 0px 0px;
-        background-image: url(images/hebergements/4_small/port.jpg);
-        background-size: cover;
-    }
     
-    .imghotel3{
-        width: 100%;
-        height: 60%;
-        border-radius: 15px 15px 0px 0px;
-        background-image: url(images/hebergements/4_small/mouettes.jpg);
-        background-size: cover;
-    }
     
-    .imghotel4{
-        width: 100%;
-        height: 60%;
-        border-radius: 15px 15px 0px 0px;
-        background-image: url(images/hebergements/4_small/hotel\ de\ la\ mer.jpg);
-        background-size: cover;
-    }
     
-    .imghotel5{
-        width: 100%;
-        height: 60%;
-        border-radius: 15px 15px 0px 0px;
-        background-image: url(images/hebergements/4_small/panier.jpg);
-        background-size: cover;
-    }
     
-    .imghotel6{
-        width: 100%;
-        height: 60%;
-        border-radius: 15px 15px 0px 0px;
-        background-image: url(images/hebergements/4_small/chez\ amina.jpg);
-        background-size: cover;
+    .hotel1, .hotel2, .hotel3, .hotel4, .hotel5, .hotel6{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: white;
+        width: 275px;
+        height: 205px;
+        padding: 5px;
+        border-radius: 20px;
+        box-shadow:  2px 2px 20px #b6b6b6;
+        cursor: pointer;
+        margin: auto;
     }
-    
+        
     .titre3{
         width: 90%;   
         height: 50px;
         margin-left: 3%;
         margin-top: 1%;
+        position: relative;
+        top: 0px;
+        left: 170px;
     }
 
     .plus{
@@ -579,15 +457,16 @@
         align-content: center;
         cursor: pointer;
         padding-left: 3%;
+        position: relative;
+        top: 800px;
+        left: -700px;
     }
 
     #ancre1{
         margin: auto;
     }
     
-    .description{
-        padding-left: 3%;
-    }
+
     
     .nomhotel{
         margin: 0px
@@ -606,7 +485,7 @@
         flex-direction: column;
         justify-content:  space-around;
         margin-left: 4%;
-        margin-bottom: 1%;
+        margin-top: 8px;
     }
     
     
@@ -624,164 +503,70 @@
     }
 
     #section_activites{
-        display: none;
-    }
-
-    #section_activites_tab{
         margin-top: 50px;
         margin-bottom: 3%;
         height: 1050px;
-      
     }
+
     
     .titre5{
         margin-left: 2%;
         padding-bottom: 1%;
     }
     
-    .conteneur5_tab{
+    .conteneur5{
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
         width: 100%;
-        height: 1000px;
+        height: 500px;
         margin-bottom: 50px;
         margin: auto;
     }
     
-    .conteneur5_1{
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        height: 48%;
-        margin: auto;
-    }
-    
-    .conteneur5_2{
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        height: 48%;
-        margin: auto;
-    }
-    
-    .activite1{
+    .activite2_3, .activite5_6{
         width: 45%;
-        height: 100%;
-        border-radius: 20px;
-        display: flex;
-        flex-direction: column;
-        box-shadow:  2px 2px 20px #e2e2e2;
+        
     }
-    
-    .activite2_3{
-        display: flex;
-        flex-direction: column;
+
+    .activite1, .activite4 {
         width: 45%;
-        height: 100%;
+        height: 480px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        box-shadow:  2px 2px 20px #e2e2e2;
     }
     
-    .activite2{
-        box-shadow:  2px 2px 20px #e2e2e2;
+    .activite2, .activite3, .activite5, .activite6{
         border-radius: 20px;
         width: 100%;
-        height: 60%;
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .activite3{
-        box-shadow:  2px 2px 20px #e2e2e2;
-        border-radius: 20px;
-        width: 100%;
-        height: 40%;
-        margin-top: 10%;
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .activite4{
-        width: 45%;
-        height: 100%;
-        border-radius: 20px;
+        height: 46%;
         display: flex;
         flex-direction: column;
         box-shadow:  2px 2px 20px #e2e2e2;
     }
-    
-    .activite5_6{
-        display: flex;
-        flex-direction: column;
-        width: 45%;
-        height: 100%;
+
+    .activite2, .activite5{
+        margin-bottom: -9px;
     }
     
-    .activite5{
-        box-shadow:  2px 2px 20px #e2e2e2;
-        border-radius: 20px;
-        width: 100%;
-        height: 60%;
-        display: flex;
-        flex-direction: column;
-        cursor: pointer;
-    }
-    
-    .activite6{
-        box-shadow:  2px 2px 20px #e2e2e2;
-        border-radius: 20px;
-        width: 100%;
-        height: 40%;
-        margin-top: 10%;
-        display: flex;
-        flex-direction: column;
-        cursor: pointer;
-    }
-    
-    .imgactivite1{
+    .div_imgactivite {
         width: 100%;
         height: 90%;
-        border-radius: 15px 15px 0px 0px;
-        background-image: url(images/activites/4_small/vieux\ port.jpg);
-        background-size: cover;
     }
+
+    .div_imgactivite2, .div_imgactivite3{
+        width: 100%;
+        height: 75%;
+    }
+
     
-    .imgactivite2{
+    .imgactivite, .imgactivite2, .imgactivite3{
         width: 100%;
-        height: 85%;
+        height: 100%;
         border-radius: 15px 15px 0px 0px;
-        background-image: url(images/activites/4_small/fort\ de\ paumegues.jpg);
-        background-size: cover;
     }
-    
-    .imgactivite3{
-        width: 100%;
-        height: 85%;
-        border-radius: 15px 15px 0px 0px;
-        background-image: url(images/activites/4_small/frioul.jpg);
-        background-size: cover;
-    }
-    
-    .imgactivite4{
-        width: 100%;
-        height: 90%;
-        border-radius: 15px 15px 0px 0px;
-        background-image: url(images/activites/4_small/par\ national.jpg);
-        background-size: cover;
-    }
-    .imgactivite5{
-        width: 100%;
-        height: 85%;
-        border-radius: 15px 15px 0px 0px;
-        background-image: url(images/activites/4_small/notre\ dame.jpg);
-        background-size: cover;
-    }
-    
-    .imgactivite6{
-        width: 100%;
-        height: 85%;
-        border-radius: 15px 15px 0px 0px;
-        background-image: url(images/activites/4_small/parc\ longchamp.jpg);
-        background-size: cover;
-    }
+
     
     
     .titreimgactivite{
