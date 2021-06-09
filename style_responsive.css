@@ -62,6 +62,7 @@
 
     body{
         padding-left: 0px;
+        padding-right: 0px;
     }
 
     #section_activites_tab{
@@ -74,7 +75,7 @@
     }
 
     #block_page{
-        width: 375px;
+        width: 100%;
         margin: auto;
     }
     
@@ -138,7 +139,7 @@
         width: 100%;
         text-align: center;
         height: 24px;
-        font-size: 16px;
+        font-size: 14px;
     }
     
 
@@ -177,13 +178,15 @@
         display: inline-block;
         margin-top: auto;
         margin-bottom: auto;
+        font-size: 14px;
     }
 
     .nav_hebergements, .nav_activites{
         height: 20px;
         border-bottom: 2px solid #e2e2e2;
         width: 50%;
-        padding-bottom: 10px;
+        padding-bottom: 13px;
+        margin-left: 0px;
     }
 
     .logo_reservia{
@@ -283,8 +286,6 @@
         font-family: 'releway_bold';
         color: black;
         align-items: center;
-        border-bottom: 2px #e2e2e2 solid;;
-
     }
     
     input:focus{
@@ -380,6 +381,7 @@
         border: 2px #e2e2e2 solid;
         border-radius: 50px;
         cursor: pointer;
+        margin-right: 0px;
     }
     
     .famillial{
@@ -390,6 +392,7 @@
         border: 2px #e2e2e2 solid;
         border-radius: 50px;
         cursor: pointer;
+        margin-right: 0px;
     }
     
     .romantique{
@@ -400,6 +403,7 @@
         border: 2px #e2e2e2 solid;
         border-radius: 50px;
         cursor: pointer;
+        margin-right: 0px;
     }
     
     .animaux{
@@ -497,6 +501,7 @@
         border-radius: 0px;
         padding: 0px;
         padding-bottom: 30px;
+        margin-left: 0px;
     }
 
     .conteneur4{order: -1;}
@@ -566,7 +571,7 @@
     .txt_trending{
         line-height: 0px;
         height: 30%;
-        width: 85%;
+        width: 87%;
     }
     
     .fa-star {
@@ -620,7 +625,7 @@
     }
 
     .div_img{
-        width: 320px;
+        width: 100%;
         height: 60%;
     }
     
@@ -640,7 +645,8 @@
     .nomhotel{
         margin: 0px
     }
-    .hotel1{
+
+    .hotel1, .hotel2, .hotel3, .hotel4, .hotel5, .hotel6{
         display: flex;
         flex-direction: column;
         background-color: white;
@@ -650,109 +656,6 @@
         border-radius: 20px;
         box-shadow:  2px 2px 10px #b6b6b6; 
     }
-    
-    .hotel2{
-        display: flex;
-        flex-direction: column;
-        background-color: white;
-        width: 100%;
-        height: 180px;
-        padding: 5px;
-        border-radius: 20px;
-        box-shadow:  2px 2px 10px #b6b6b6;
-    }
-    
-    .hotel3{
-        display: flex;
-        flex-direction: column;
-        background-color: white;
-        width: 100%;
-        height: 180px;
-        padding: 5px;
-        border-radius: 20px;
-        box-shadow:  2px 2px 10px #b6b6b6;
-    }
-    
-    .hotel4{
-        display: flex;
-        flex-direction: column;
-        background-color: white;
-        width: 100%;
-        height: 180px;
-        padding: 5px;
-        border-radius: 20px;
-        box-shadow:  2px 2px 10px #b6b6b6;
-    }
-    
-    .hotel5{
-        display: flex;
-        flex-direction: column;
-        background-color: white;
-        width: 100%;
-        height: 180px;
-        padding: 5px;
-        border-radius: 20px;
-        box-shadow:  2px 2px 10px #b6b6b6;
-    }
-    
-    .hotel6{
-        display: flex;
-        flex-direction: column;
-        background-color: white;
-        width: 100%;
-        height: 180px;
-        padding: 5px;
-        border-radius: 20px;
-        box-shadow:  2px 2px 10px #b6b6b6;
-    }
-    
-   /* .imghotel{
-        width: 100%;
-        height: 60%;
-        border-radius: 20px 20px 0px 0px;
-        background-image: url(images/hebergements/4_small/cannebiere.jpg);
-        background-size: cover;
-    }
-    
-    .imghotel2{
-        width: 100%;
-        height: 60%;
-        border-radius: 20px 20px 0px 0px;
-        background-image: url(images/hebergements/4_small/port.jpg);
-        background-size: cover;
-    }
-    
-    .imghotel3{
-        width: 100%;
-        height: 60%;
-        border-radius: 20px 20px 0px 0px;
-        background-image: url(images/hebergements/4_small/mouettes.jpg);
-        background-size: cover;
-    }
-    
-    .imghotel4{
-        width: 100%;
-        height: 60%;
-        border-radius: 20px 20px 0px 0px;
-        background-image: url(images/hebergements/4_small/hotel\ de\ la\ mer.jpg);
-        background-size: cover;
-    }
-    
-    .imghotel5{
-        width: 100%;
-        height: 60%;
-        border-radius: 20px 20px 0px 0px;
-        background-image: url(images/hebergements/4_small/panier.jpg);
-        background-size: cover;
-    }
-    
-    .imghotel6{
-        width: 100%;
-        height: 60%;
-        border-radius: 20px 20px 0px 0px;
-        background-image: url(images/hebergements/4_small/chez\ amina.jpg);
-        background-size: cover;
-    }*/
     
     .descriptionimghotel{
         line-height: 10px;
@@ -788,6 +691,10 @@
         flex-direction: column;
         margin-top: 3%;
     }
+
+    #section_activites{
+        margin-top: 0px;
+    }
     
     .titre5{
         width: 80%;
@@ -813,7 +720,7 @@
     }
     
     .div_imgactivite, .div_imgactivite2, .div_imgactivite3{
-        width: 320px;
+        width: 100%;
         height: 150px;
     }
 
@@ -823,48 +730,10 @@
         border-radius: 20px 20px 0px 0px;
     }
     
-    /*.imgactivite2{
-        width: 100%;
-        height: 75%;
-        border-radius: 20px 20px 0px 0px;
-        background-image: url(images/activites/4_small/fort\ de\ paumegues.jpg);
-        background-size: cover;
-    }
-    
-    .imgactivite3{
-        width: 100%;
-        height: 75%;
-        border-radius: 20px 20px 0px 0px;
-        background-image: url(images/activites/4_small/frioul.jpg);
-        background-size: cover;
-    }
-    
-    .imgactivite4{
-        width: 100%;
-        height: 75%;
-        border-radius: 20px 20px 0px 0px;
-        background-image: url(images/activites/4_small/par\ national.jpg);
-        background-size: cover;
-    }
-    .imgactivite5{
-        width: 100%;
-        height: 75%;
-        border-radius: 20px 20px 0px 0px;
-        background-image: url(images/activites/4_small/notre\ dame.jpg);
-        background-size: cover;
-    }
-    
-    .imgactivite6{
-        width: 100%;
-        height: 75%;
-        border-radius: 20px 20px 0px 0px;
-        background-image: url(images/activites/4_small/parc\ longchamp.jpg);
-        background-size: cover;
-    }*/
-    
     .titreimgactivite{
         margin-left: 4%;
         height: 100%;
+        font-size: 16px;
     }
     
 
@@ -872,7 +741,7 @@
         width: 100%;
         height: 450px;
         background-color: #F2F2F2;
-        margin-top: 8%;
+        margin-top: 18%;
     }
     
     .footer{
