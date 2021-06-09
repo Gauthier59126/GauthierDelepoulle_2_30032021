@@ -96,6 +96,7 @@
         display: flex;
         justify-content: space-around;
         width: 50%;
+        padding-right: 55px;
     }
 
     .nav_hebergements, .nav_activites, .nav_signup{
@@ -205,6 +206,7 @@
         border: 2px #e2e2e2 solid;
         border-radius: 50px;
         cursor: pointer;
+        margin-right: 0px;
     }
     
     .famillial{
@@ -215,6 +217,7 @@
         border: 2px #e2e2e2 solid;
         border-radius: 50px;
         cursor: pointer;
+        margin-right: 0px;
     }
     
     .romantique{
