@@ -612,6 +612,11 @@ input:focus{
     font-size: 16px;
 }
 
+.nomhotel_trending1{
+    margin-top: 10px;
+    width: 107%;
+}
+
 .txt_trending{
     font-size: 16px;
 }

@@ -567,6 +567,11 @@
         line-height: 20px;
         margin: 0;
     }
+
+    .nomhotel_trending1{
+        margin-top: 0px;
+        width: 100%;
+    }
     
     .txt_trending{
         line-height: 0px;
